@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Form</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Removed the logo section -->
+    <h1>Student Information Form</h1>
+
+    <!-- Form Section -->
+    <form id="studentForm">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label for="cgpa">CGPA:</label>
+        <input type="number" step="0.01" id="cgpa" name="cgpa" placeholder="Enter your CGPA" required>
+      </div>
+      <div class="form-group">
+        <label for="year">Year:</label>
+        <input type="number" id="year" name="year" placeholder="Enter your year" min="1" max="5" required>
+      </div>
+      <div class="form-group">
+        <label for="semester">Semester:</label>
+        <input type="number" id="semester" name="semester" placeholder="Enter your semester" min="1" max="10" required>
+      </div>
+      <div class="form-group">
+        <label for="contact">Contact Number:</label>
+        <input type="text" id="contact" name="contact" placeholder="Enter your contact number" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email ID:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" placeholder="Enter your address" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" placeholder="Enter your age" min="18" required>
+      </div>
+      <div class="form-group">
+        <label for="futurePlans">Future Plans:</label>
+        <select id="futurePlans" name="futurePlans" required>
+          <option value="">Select Your Future Plan</option>
+          <option value="Higher Education">Higher Education</option>
+          <option value="Placement">Placement</option>
+          <option value="Family Business">Family Business</option>
+        </select>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
